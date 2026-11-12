@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho sobre Tabelas HTML - Colspan e Rowspan</title>
+</head>
+<body>
+
+    <h1>Tabela 1 - Exemplo com Colspan e Rowspan (Produção)</h1>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th colspan="3" bgcolor="#99CCFF">Quadro de Produção</th>
+        </tr>
+        <tr>
+            <th>Setor</th>
+            <th>Funcionário</th>
+            <th>Código</th>
+        </tr>
+        <tr>
+            <th rowspan="3" bgcolor="#99CCFF">Production</th>
+            <td>Raha Mutisya</td>
+            <td>1493</td>
+        </tr>
+        <tr>
+            <td>Shalom Buraka</td>
+            <td>3829</td>
+        </tr>
+        <tr>
+            <td>Brandy Davis</td>
+            <td>0283</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1>Tabela 2 - Grade de Horários</h1>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th colspan="6" bgcolor="#CCE5FF">Horário Escolar - Turno Manhã</th>
+        </tr>
+        <tr>
+            <th>Horário</th>
+            <th>Segunda</th>
+            <th>Terça</th>
+            <th>Quarta</th>
+            <th>Quinta</th>
+            <th>Sexta</th>
+        </tr>
+        <tr>
+            <td>07:30 - 09:10</td>
+            <td>HTML / CSS</td>
+            <td>Lógica</td>
+            <td>Banco de Dados</td>
+            <td>HTML / CSS</td>
+            <td>Projeto Web</td>
+        </tr>
+        <tr>
+            <td>09:10 - 09:30</td>
+            <td colspan="5" align="center" bgcolor="#EEEEEE"><b>INTERVALO</b></td>
+        </tr>
+        <tr>
+            <td>09:30 - 11:10</td>
+            <td>JavaScript</td>
+            <td rowspan="2" align="center">Redes<br>(Aula Dupla)</td>
+            <td>Lógica</td>
+            <td>Banco de Dados</td>
+            <td>Projeto Web</td>
+        </tr>
+        <tr>
+            <td>11:10 - 12:00</td>
+            <td>Inglês Técnico</td>
+            <td>Educação Física</td>
+            <td>JavaScript</td>
+            <td>Orientação</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1>Tabela 3 - Tabela de Preços</h1>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th colspan="4" bgcolor="#D4EDDA">Catálogo de Produtos e Serviços</th>
+        </tr>
+        <tr>
+            <th>Categoria</th>
+            <th>Item</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <th rowspan="3" bgcolor="#E8F5E9">Hardware</th>
+            <td>Notebook</td>
+            <td>Processador i5, 16GB RAM, SSD 512GB</td>
+            <td>R$ 3.500,00</td>
+        </tr>
+        <tr>
+            <td>Monitor 24"</td>
+            <td>Full HD, Painel IPS, 75Hz</td>
+            <td>R$ 850,00</td>
+        </tr>
+        <tr>
+            <td>Teclado Mecânico</td>
+            <td>Switch Blue, Layout ABNT2</td>
+            <td>R$ 280,00</td>
+        </tr>
+        <tr>
+            <th rowspan="2" bgcolor="#E8F5E9">Serviços</th>
+            <td>Formatação</td>
+            <td>Backup e instalação do sistema</td>
+            <td>R$ 120,00</td>
+        </tr>
+        <tr>
+            <td>Limpeza Interna</td>
+            <td>Troca de pasta térmica e higienização</td>
+            <td>R$ 90,00</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="right"><b>Pacote Completo de Manutenção (Formatação + Limpeza):</b></td>
+            <td bgcolor="#FFF3CD"><b>R$ 180,00</b></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1>Tabela 4 - Quadro de Funcionários</h1>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th colspan="5" bgcolor="#F8D7DA">Relação de Funcionários por Departamento</th>
+        </tr>
+        <tr>
+            <th>Departamento</th>
+            <th>Matrícula</th>
+            <th>Nome</th>
+            <th>Cargo</th>
+            <th>Turno</th>
+        </tr>
+        <tr>
+            <th rowspan="2" bgcolor="#FCE8E6">Tecnologia (TI)</th>
+            <td>1001</td>
+            <td>Carlos Eduardo</td>
+            <td>Desenvolvedor Front-End</td>
+            <td>Integral</td>
+        </tr>
+        <tr>
+            <td>1002</td>
+            <td>Mariana Silva</td>
+            <td>Analista de Sistemas</td>
+            <td>Integral</td>
+        </tr>
+        <tr>
+            <th rowspan="2" bgcolor="#FCE8E6">Administrativo</th>
+            <td>2001</td>
+            <td>Fernanda Costa</td>
+            <td>Gerente Financeiro</td>
+            <td>Manhã</td>
+        </tr>
+        <tr>
+            <td>2002</td>
+            <td>João Pedro</td>
+            <td>Assistente de RH</td>
+            <td>Tarde</td>
+        </tr>
+        <tr>
+            <th bgcolor="#FCE8E6">Atendimento</th>
+            <td>3001</td>
+            <td>Lucas Oliveira</td>
+            <td>Suporte ao Cliente</td>
+            <td>Integral</td>
+        </tr>
+        <tr>
+            <td colspan="4" align="right"><b>Total de Funcionários Ativos:</b></td>
+            <td align="center"><b>5</b></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1>Tabela 5 - Preços de Carros e Motos</h1>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th colspan="5" bgcolor="#FFE5B4">Tabela de Preços - Concessionária</th>
+        </tr>
+        <tr>
+            <th>Tipo</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Ano</th>
+            <th>Valor</th>
+        </tr>
+        <tr>
+            <th rowspan="3" bgcolor="#FFF3E0">Carros</th>
+            <td>Volkswagen</td>
+            <td>Polo Track 1.0</td>
+            <td>2026</td>
+            <td>R$ 89.990,00</td>
+        </tr>
+        <tr>
+            <td>Chevrolet</td>
+            <td>Onix LT 1.0</td>
+            <td>2026</td>
+            <td>R$ 94.500,00</td>
+        </tr>
+        <tr>
+            <td>Hyundai</td>
+            <td>HB20 Comfort</td>
+            <td>2026</td>
+            <td>R$ 91.200,00</td>
+        </tr>
+        <tr>
+            <th rowspan="3" bgcolor="#FFF3E0">Motos</th>
+            <td>Honda</td>
+            <td>CG 160 Titan</td>
+            <td>2026</td>
+            <td>R$ 18.400,00</td>
+        </tr>
+        <tr>
+            <td>Yamaha</td>
+            <td>Fazer FZ25</td>
+            <td>2026</td>
+            <td>R$ 23.900,00</td>
+        </tr>
+        <tr>
+            <td>Honda</td>
+            <td>CB 300F Twister</td>
+            <td>2026</td>
+            <td>R$ 24.600,00</td>
+        </tr>
+        <tr>
+            <td colspan="4" align="right"><b>Taxa de Documentação e Emplacamento (Opcional):</b></td>
+            <td bgcolor="#FFF3CD"><b>R$ 1.800,00</b></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1>Tabela 6 - Campeonato de Futebol</h1>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th colspan="6" bgcolor="#C3E6CB">Classificação - Campeonato Brasileiro</th>
+        </tr>
+        <tr>
+            <th>Zona</th>
+            <th>Posição</th>
+            <th>Time</th>
+            <th>Pontos</th>
+            <th>Vitórias</th>
+            <th>Saldo de Gols</th>
+        </tr>
+        <tr>
+            <th rowspan="3" bgcolor="#D4EDDA">Libertadores</th>
+            <td align="center">1º</td>
+            <td>Palmeiras</td>
+            <td align="center">68</td>
+            <td align="center">20</td>
+            <td align="center">+29</td>
+        </tr>
+        <tr>
+            <td align="center">2º</td>
+            <td>Flamengo</td>
+            <td align="center">65</td>
+            <td align="center">19</td>
+            <td align="center">+24</td>
+        </tr>
+        <tr>
+            <td align="center">3º</td>
+            <td>Botafogo</td>
+            <td align="center">62</td>
+            <td align="center">18</td>
+            <td align="center">+21</td>
+        </tr>
+        <tr>
+            <th rowspan="2" bgcolor="#FFF3CD">Sul-Americana</th>
+            <td align="center">4º</td>
+            <td>Athletico-PR</td>
+            <td align="center">56</td>
+            <td align="center">16</td>
+            <td align="center">+12</td>
+        </tr>
+        <tr>
+            <td align="center">5º</td>
+            <td>São Paulo</td>
+            <td align="center">54</td>
+            <td align="center">15</td>
+            <td align="center">+10</td>
+        </tr>
+        <tr>
+            <td colspan="6" align="center" bgcolor="#EEEEEE"><b>Critério de Desempate: Número de Vitórias e Saldo de Gols</b></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1>Tabela 7 - Copa do Mundo</h1>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th colspan="5" bgcolor="#B8DAFF">Copa do Mundo - Fase de Grupos</th>
+        </tr>
+        <tr>
+            <th>Grupo</th>
+            <th>Seleção</th>
+            <th>Jogos</th>
+            <th>Pontos</th>
+            <th>Situação</th>
+        </tr>
+        <tr>
+            <th rowspan="4" bgcolor="#D1ECF1">Grupo A</th>
+            <td>Brasil</td>
+            <td align="center">3</td>
+            <td align="center">9</td>
+            <td rowspan="2" align="center" bgcolor="#D4EDDA"><b>Classificados</b></td>
+        </tr>
+        <tr>
+            <td>França</td>
+            <td align="center">3</td>
+            <td align="center">6</td>
+        </tr>
+        <tr>
+            <td>Japão</td>
+            <td align="center">3</td>
+            <td align="center">3</td>
+            <td rowspan="2" align="center" bgcolor="#F8D7DA">Eliminados</td>
+        </tr>
+        <tr>
+            <td>Marrocos</td>
+            <td align="center">3</td>
+            <td align="center">0</td>
+        </tr>
+        <tr>
+            <td colspan="5" align="center" bgcolor="#FFF3CD"><b>Próxima Fase: Oitavas de Final</b></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1>Tabela 8 - Ficha Técnica de Carros e Motos</h1>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th colspan="6" bgcolor="#D6D8DB">Especificações Técnicas - Veículos 2026</th>
+        </tr>
+        <tr>
+            <th>Categoria</th>
+            <th>Modelo</th>
+            <th>Motor</th>
+            <th>Potência</th>
+            <th>Câmbio</th>
+            <th>Consumo Médio</th>
+        </tr>
+        <tr>
+            <th rowspan="2" bgcolor="#E2E3E5">Carros</th>
+            <td>Volkswagen Polo Track</td>
+            <td>1.0 MPI Flex</td>
+            <td>84 cv</td>
+            <td>Manual 5 marchas</td>
+            <td>13,5 km/l</td>
+        </tr>
+        <tr>
+            <td>Hyundai HB20 Comfort</td>
+            <td>1.0 TGDI Flex</td>
+            <td>120 cv</td>
+            <td>Automático 6 marchas</td>
+            <td>12,8 km/l</td>
+        </tr>
+        <tr>
+            <th rowspan="2" bgcolor="#E2E3E5">Motos</th>
+            <td>Honda CG 160 Titan</td>
+            <td>162,7 cc Flex</td>
+            <td>15,1 cv</td>
+            <td>Manual 5 marchas</td>
+            <td>40,0 km/l</td>
+        </tr>
+        <tr>
+            <td>Yamaha Fazer FZ25</td>
+            <td>249 cc Flex</td>
+            <td>21,5 cv</td>
+            <td>Manual 5 marchas</td>
+            <td>32,0 km/l</td>
+        </tr>
+        <tr>
+            <td colspan="6" align="center" bgcolor="#FFF3CD"><b>Dados aferidos conforme padrão Inmetro (Gasolina)</b></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1>Tabela 9 - Visitas Mensais</h1>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th colspan="5" bgcolor="#CCE5FF">Relatório de Visitas Mensais ao Site</th>
+        </tr>
+        <tr>
+            <th>Trimestre</th>
+            <th>Mês</th>
+            <th>Visitantes Únicos</th>
+            <th>Páginas Vistas</th>
+            <th>Origem Principal</th>
+        </tr>
+        <tr>
+            <th rowspan="3" bgcolor="#E6F2FF">1º Trimestre</th>
+            <td>Janeiro</td>
+            <td align="center">12.400</td>
+            <td align="center">38.200</td>
+            <td>Busca Orgânica</td>
+        </tr>
+        <tr>
+            <td>Fevereiro</td>
+            <td align="center">14.150</td>
+            <td align="center">42.900</td>
+            <td>Redes Sociais</td>
+        </tr>
+        <tr>
+            <td>Março</td>
+            <td align="center">16.800</td>
+            <td align="center">51.000</td>
+            <td>Busca Orgânica</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right"><b>Total Acumulado no Trimestre:</b></td>
+            <td align="center" bgcolor="#D4EDDA"><b>43.350</b></td>
+            <td align="center" bgcolor="#D4EDDA"><b>132.100</b></td>
+            <td><b>Média: 3,04 pág/visita</b></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1>Tabela 10 - Vendas Trimestrais</h1>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th colspan="5" bgcolor="#D4EDDA">Desempenho de Vendas Trimestrais (2026)</th>
+        </tr>
+        <tr>
+            <th>Período</th>
+            <th>Região</th>
+            <th>Unidades Vendidas</th>
+            <th>Faturamento</th>
+            <th>Meta Atingida</th>
+        </tr>
+        <tr>
+            <th rowspan="2" bgcolor="#E8F5E9">1º Trimestre</th>
+            <td>Sul / Sudeste</td>
+            <td align="center">420</td>
+            <td>R$ 210.000,00</td>
+            <td align="center" bgcolor="#D4EDDA">Sim (105%)</td>
+        </tr>
+        <tr>
+            <td>Norte / Nordeste</td>
+            <td align="center">280</td>
+            <td>R$ 140.000,00</td>
+            <td align="center" bgcolor="#FFF3CD">Parcial (93%)</td>
+        </tr>
+        <tr>
+            <th rowspan="2" bgcolor="#E8F5E9">2º Trimestre</th>
+            <td>Sul / Sudeste</td>
+            <td align="center">490</td>
+            <td>R$ 245.000,00</td>
+            <td align="center" bgcolor="#D4EDDA">Sim (112%)</td>
+        </tr>
+        <tr>
+            <td>Norte / Nordeste</td>
+            <td align="center">310</td>
+            <td>R$ 155.000,00</td>
+            <td align="center" bgcolor="#D4EDDA">Sim (101%)</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="right"><b>Faturamento Geral do Semestre:</b></td>
+            <td colspan="2" align="center" bgcolor="#C3E6CB"><b>R$ 750.000,00</b></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1>Tabela 11 - Serviços Mecânicos</h1>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th colspan="5" bgcolor="#FFE5B4">Tabela de Serviços Mecânicos e Oficina</th>
+        </tr>
+        <tr>
+            <th>Especialidade</th>
+            <th>Serviço</th>
+            <th>Tempo Estimado</th>
+            <th>Garantia</th>
+            <th>Valor Mão de Obra</th>
+        </tr>
+        <tr>
+            <th rowspan="3" bgcolor="#FFF3E0">Motor e Revisão</th>
+            <td>Troca de Óleo e Filtros</td>
+            <td align="center">40 min</td>
+            <td align="center">3 meses</td>
+            <td>R$ 80,00</td>
+        </tr>
+        <tr>
+            <td>Troca de Correia Dentada</td>
+            <td align="center">3 horas</td>
+            <td align="center">6 meses</td>
+            <td>R$ 320,00</td>
+        </tr>
+        <tr>
+            <td>Limpeza de Bicos Injetores</td>
+            <td align="center">1h 30min</td>
+            <td align="center">3 meses</td>
+            <td>R$ 150,00</td>
+        </tr>
+        <tr>
+            <th rowspan="2" bgcolor="#FFF3E0">Freios e Suspensão</th>
+            <td>Troca de Pastilhas de Freio</td>
+            <td align="center">1 hora</td>
+            <td align="center">6 meses</td>
+            <td>R$ 110,00</td>
+        </tr>
+        <tr>
+            <td>Alinhamento e Balanceamento</td>
+            <td align="center">50 min</td>
+            <td align="center">3 meses</td>
+            <td>R$ 120,00</td>
+        </tr>
+        <tr>
+            <td colspan="5" align="center" bgcolor="#EEEEEE"><b>Observação: Valores referentes apenas à mão de obra (peças cobradas à parte).</b></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1>Tabela 12 - Compra e Venda de Casas, Condomínios e Apartamentos</h1>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th colspan="6" bgcolor="#E2D9F3">Catálogo Imobiliário - Compra e Venda</th>
+        </tr>
+        <tr>
+            <th>Tipo de Imóvel</th>
+            <th>Bairro</th>
+            <th>Área (m²)</th>
+            <th>Quartos</th>
+            <th>Modalidade</th>
+            <th>Valor</th>
+        </tr>
+        <tr>
+            <th rowspan="2" bgcolor="#F3EFFF">Casas</th>
+            <td>Jardim Botânico</td>
+            <td align="center">180 m²</td>
+            <td align="center">3</td>
+            <td align="center">Venda</td>
+            <td>R$ 680.000,00</td>
+        </tr>
+        <tr>
+            <td>Santa Felicidade</td>
+            <td align="center">220 m²</td>
+            <td align="center">4</td>
+            <td align="center">Venda</td>
+            <td>R$ 850.000,00</td>
+        </tr>
+        <tr>
+            <th rowspan="2" bgcolor="#F3EFFF">Condomínios</th>
+            <td>Ecoville</td>
+            <td align="center">310 m²</td>
+            <td align="center">4 (Suítes)</td>
+            <td align="center">Venda</td>
+            <td>R$ 1.450.000,00</td>
+        </tr>
+        <tr>
+            <td>Batel</td>
+            <td align="center">290 m²</td>
+            <td align="center">3 (Suítes)</td>
+            <td align="center">Venda / Permuta</td>
+            <td>R$ 1.620.000,00</td>
+        </tr>
+        <tr>
+            <th rowspan="2" bgcolor="#F3EFFF">Apartamentos</th>
+            <td>Água Verde</td>
+            <td align="center">85 m²</td>
+            <td align="center">2</td>
+            <td align="center">Venda</td>
+            <td>R$ 430.000,00</td>
+        </tr>
+        <tr>
+            <td>Centro</td>
+            <td align="center">52 m²</td>
+            <td align="center">1</td>
+            <td align="center">Venda</td>
+            <td>R$ 295.000,00</td>
+        </tr>
+        <tr>
+            <td colspan="6" align="center" bgcolor="#FFF3CD"><b>Financiamento Bancário Disponível em até 360 meses com entrada a partir de 20%</b></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1>Tabela 13 - Vendas de Fevereiro e Março de 2010</h1>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th colspan="5" bgcolor="#D1ECF1">Relatório Histórico de Vendas - 1º Bimestre (2010)</th>
+        </tr>
+        <tr>
+            <th>Mês / Ano</th>
+            <th>Categoria</th>
+            <th>Unidades Vendidas</th>
+            <th>Faturamento</th>
+            <th>Destaque do Mês</th>
+        </tr>
+        <tr>
+            <th rowspan="2" bgcolor="#E8F4F8">Fevereiro / 2010</th>
+            <td>Eletrônicos</td>
+            <td align="center">310</td>
+            <td>R$ 95.000,00</td>
+            <td>TVs LCD e Notebooks</td>
+        </tr>
+        <tr>
+            <td>Eletrodomésticos</td>
+            <td align="center">240</td>
+            <td>R$ 68.000,00</td>
+            <td>Refrigeradores</td>
+        </tr>
+        <tr>
+            <th rowspan="2" bgcolor="#E8F4F8">Março / 2010</th>
+            <td>Eletrônicos</td>
+            <td align="center">385</td>
+            <td>R$ 118.500,00</td>
+            <td>Câmeras Digitais e Celulares</td>
+        </tr>
+        <tr>
+            <td>Eletrodomésticos</td>
+            <td align="center">290</td>
+            <td>R$ 82.500,00</td>
+            <td>Máquinas de Lavar</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right"><b>Total Consolidado (Fev e Mar / 2010):</b></td>
+            <td align="center" bgcolor="#D4EDDA"><b>1.225</b></td>
+            <td colspan="2" align="center" bgcolor="#D4EDDA"><b>R$ 364.000,00</b></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1>Tabela 14 - Vendas de Carros (Março e Fevereiro 2010)</h1>
+    <table border="1" cellpadding="5" cellspacing="2">
+        <tr>
+            <th colspan="2" bgcolor="#FFFF00">Vendas março 2010</th>
+        </tr>
+        <tr>
+            <th bgcolor="#6FA8DC">Carro</th>
+            <th bgcolor="#6FA8DC">Unidades</th>
+        </tr>
+        <tr>
+            <td>Gol</td>
+            <td>250.000</td>
+        </tr>
+        <tr>
+            <td>Uno</td>
+            <td>123.000</td>
+        </tr>
+        <tr>
+            <th colspan="2" bgcolor="#FFFF00">Vendas fev. 2010</th>
+        </tr>
+        <tr>
+            <th bgcolor="#6FA8DC">Carro</th>
+            <th bgcolor="#6FA8DC">Unidades</th>
+        </tr>
+        <tr>
+            <td>Gol</td>
+            <td>250.000</td>
+        </tr>
+        <tr>
+            <td>Uno</td>
+            <td>123.000</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1>Tabela 15 - Campeonato Brasileiro Série A e Série B</h1>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th colspan="6" bgcolor="#C3E6CB">Campeonato Brasileiro - Divisões Principais</th>
+        </tr>
+        <tr>
+            <th>Divisão</th>
+            <th>Posição</th>
+            <th>Clube</th>
+            <th>Pontos</th>
+            <th>Jogos</th>
+            <th>Situação</th>
+        </tr>
+        <tr>
+            <th rowspan="3" bgcolor="#D4EDDA">Série A</th>
+            <td align="center">1º</td>
+            <td>Palmeiras</td>
+            <td align="center">70</td>
+            <td align="center">38</td>
+            <td align="center" bgcolor="#D1ECF1">Campeão / Libertadores</td>
+        </tr>
+        <tr>
+            <td align="center">2º</td>
+            <td>Flamengo</td>
+            <td align="center">67</td>
+            <td align="center">38</td>
+            <td align="center" bgcolor="#D1ECF1">Libertadores</td>
+        </tr>
+        <tr>
+            <td align="center">3º</td>
+            <td>Botafogo</td>
+            <td align="center">64</td>
+            <td align="center">38</td>
+            <td align="center" bgcolor="#D1ECF1">Libertadores</td>
+        </tr>
+        <tr>
+            <th rowspan="3" bgcolor="#FFF3CD">Série B</th>
+            <td align="center">1º</td>
+            <td>Santos</td>
+            <td align="center">68</td>
+            <td align="center">38</td>
+            <td rowspan="3" align="center" bgcolor="#D4EDDA"><b>Acesso à Série A</b></td>
+        </tr>
+        <tr>
+            <td align="center">2º</td>
+            <td>Mirassol</td>
+            <td align="center">67</td>
+            <td align="center">38</td>
+        </tr>
+        <tr>
+            <td align="center">3º</td>
+            <td>Sport</td>
+            <td align="center">66</td>
+            <td align="center">38</td>
+        </tr>
+        <tr>
+            <td colspan="6" align="center" bgcolor="#EEEEEE"><b>Dados consolidados das duas principais divisões do futebol nacional</b></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1>Tabela 16 - Ficha Técnica (Polo GTI)</h1>
+    <table border="1" cellpadding="6" cellspacing="2" width="700">
+        <tr>
+            <th colspan="3" bgcolor="#111111"><font color="#FFFFFF" size="5" face="Courier New, monospace">Ficha técnica</font></th>
+        </tr>
+        <tr>
+            <td align="center" width="260">
+                <img src="polo-gti-preto.jpg" alt="Polo GTI Preto" width="250">
+            </td>
+            <td align="center" bgcolor="#D9EAD3" width="240">Nome</td>
+            <td align="center" width="200">Polo GTI</td>
+        </tr>
+        <tr>
+            <td rowspan="5" align="center" valign="middle">
+                Modelo esportivo compacto da Volkswagen na cor preta, equipado com motor 1.4 turbo TSI a gasolina de 180 cv de potência. Construído sobre a plataforma PQ25, oferece suspensão dianteira recalibrada e bom equilíbrio entre desempenho esportivo e eficiência energética no uso diário.
+            </td>
+            <td align="center" bgcolor="#D9EAD3">Valor:</td>
+            <td align="center">99 800 reais</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#D9EAD3">Garantia</td>
+            <td align="center">1 ano sem limite de km</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#D9EAD3">Consumo Cidade</td>
+            <td align="center">9,7</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#D9EAD3">Consumo estrada (km/l)</td>
+            <td align="center">13,1</td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#D9EAD3">Tanque de combustível/autonomia</td>
+            <td align="center">45 / 589,5</td>
+        </tr>
+    </table>
+
+</body>
+</html>
